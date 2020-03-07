@@ -1,0 +1,108 @@
+html body{
+  background-color: #add8e6;
+}
+
+.box{
+}
+
+.developerData{
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+
+.developerData .developerName span{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.developerData .interviewDate span{
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.content {
+  margin-left: 200px;
+  width: 390px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+input, select {
+  min-width: 250px;
+  border: none;
+  outline: none;
+}
+
+input {
+  padding-right: 5px;
+  text-align: right;
+}
+
+label {
+  margin-top: 8px;
+}
+
+.content .markup, .content .cost, .content .rate, .content .rule, .content .price {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .error {
+  display: none;
+  color: #bd2130;
+  text-align: right;
+}
+
+.data {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.data > div:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+.data .inPrice, .data .exPrice, .data .grossProfitPercent, .data .grossProfitDollar {
+  padding: 5px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  min-width: 250px;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button button {
+  min-width: 250px;
+  border: none;
+  padding: 20px 0;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #b45f06;
+  outline: none;
+}
+
+.button button:hover {
+  outline:none;
+}
+
+::-webkit-input-placeholder {
+  text-align:right;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

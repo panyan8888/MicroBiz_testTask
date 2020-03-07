@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <title>Test Task</title>
+</head>
+<!--<script>-->
+<!--    function handleChange(input) {-->
+<!--        if (input.value < 10) input.value = 10;-->
+<!--        if (input.value > 200) input.value = 200;-->
+<!--    }-->
+<!--</script>-->
+<body>
+    <div class="box">
+        <div class="developerData">
+            <div class="developerName">
+                <span>Armen Panyan</span>
+            </div>
+            <div class="interviewDate">
+                <span id="currentDate"></span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="markup">
+                <label for="markup" id="markup">Default Markup</label>
+                <input type="number" id="markupId" onchange="rangeForMarkup(this)" placeholder="%">
+            </div>
+            <div class="cost">
+                <label for="cost" id="cost">Cost</label>
+                <input type="number" id="costId" onchange="rangeForCost(this)" placeholder="$">
+            </div>
+            <div class="rate">
+                <label for="taxRateId">Tax rate</label>
+                <select id="taxRateId">
+                    <option value="7" selected>7%</option>
+                    <option value="20">20%</option>
+                    <option value="0">0%</option>
+                </select>
+            </div>
+            <div class="rule">
+                <label for="roundingRuleId">Rounding Rule</label>
+                <select id="roundingRuleId">
+                    <option value="95" selected>95</option>
+                    <option value="99">99</option>
+                    <option value="00">00</option>
+                </select>
+            </div>
+            <div class="price">
+                <label for="pricingModeId">Pricing Mode</label>
+                <select id="pricingModeId">
+                    <option value="Tax_Inclusive">Tax Inclusive</option>
+                    <option value="Tax_Exclusive" selected>Tax Exclusive</option>
+                </select>
+            </div>
+            <div id="errorDiv" class="error">
+                <span id="error"></span>
+            </div>
+            <div class="data">
+                <div class="inPrice">
+                    <span>Tax Inclusive Price</span>
+                    <span id="taxInclusivePrice">0.00</span>
+                </div>
+                <div class="exPrice">
+                    <span>Tax Exclusive Price</span>
+                    <span id="taxExclusivePrice">0.00</span>
+                </div>
+                <div class="grossProfitPercent">
+                    <span>Gross Profit (%)</span>
+                    <span id="grossProfitPercent">0.00</span>
+                </div>
+                <div class="grossProfitDollar">
+                    <span>Gross Profit ($)</span>
+                    <span id="grossProfitDollar">0.00</span>
+                </div>
+            </div>
+            <div class="button">
+                <button type="button" id="calculateButton">Calculate</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/custom.js"></script>
+</body>
+</html>
